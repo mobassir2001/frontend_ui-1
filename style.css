@@ -1,0 +1,152 @@
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        font-family: "Gilroy";
+                    }
+                    
+                    html,
+                    body {
+                        height: 100%;
+                        width: 100%;
+                    }
+                    
+                    #main {
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        /* position: relative; */
+                    }
+                    
+                    #left {
+                        height: 100%;
+                        width: 40%;
+                        background-color: rgb(9, 115, 9);
+                        position: relative;
+                        z-index: 9;
+                    }
+                    
+                    #image {
+                        /* background-color: red; */
+                        width: 20%;
+                        height: 75%;
+                        position: absolute;
+                        top: 50%;
+                        left: 44%;
+                        transform: translate(-50%, -50%);
+                        z-index: 11;
+                    }
+                    
+                    #main #image img {
+                        height: 100%;
+                    }
+                    
+                    #right {
+                        width: 100%;
+                        height: 100%;
+                        width: 60%;
+                        background-color: rgb(98, 187, 113);
+                        position: relative;
+                    }
+                    
+                    #ring {
+                        height: 150px;
+                        width: 150px;
+                        border: 20px solid rgb(195, 89, 79);
+                        border-radius: 50%;
+                        top: 2%;
+                        left: 39%;
+                        position: absolute;
+                        z-index: 10;
+                    }
+                    
+                    #text {
+                        position: absolute;
+                        top: 39%;
+                        left: 13%;
+                    }
+                    
+                    #text h1 {
+                        color: #006400;
+                        font-size: 100px;
+                        font-weight: 400;
+                        line-height: 0.8;
+                        z-index: -20;
+                    }
+                    
+                    #text h6 {
+                        color: tomato;
+                        font-size: 20px;
+                    }
+                    
+                    #text1 {
+                        position: relative;
+                        font-size: 120px;
+                        font-weight: 800;
+                        color: black;
+                        margin-top: 2.5%;
+                        right: 3%;
+                        opacity: 0.3;
+                        line-height: 0.8;
+                    }
+                    
+                    #left #option {
+                        position: relative;
+                        top: 70%;
+                        left: 15%;
+                        width: 70%;
+                        height: 30%;
+                    }
+                    
+                    #left #option h3 {
+                        color: #fff;
+                    }
+                    
+                    #left #option h5 {
+                        color: black;
+                    }
+                    
+                    #left #photos {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        margin-top: 10px;
+                        width: 70%;
+                        height: 40%;
+                    }
+                    
+                    #left #photos .box {
+                        width: 200px;
+                        height: 100px;
+                        background-color: tomato;
+                        border-radius: 20px;
+                        overflow: hidden;
+                        border: 3px solid red;
+                    }
+                    
+                    #left #photos .box img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 20px;
+                    }
+                    
+                    #left #photos .box img:hover {
+                        scale: 1.2;
+                        cursor: pointer;
+                        transition: all 0.5s ease;
+                    }
+                    
+                    #right #text button {
+                        padding: 10px 30px;
+                        font-size: 1.3vw;
+                        border-radius: 50px;
+                        border: 1px solid red;
+                        color: blue;
+                        margin: 15px 10px;
+                    }
+                    
+                    #right #text button:hover {
+                        background-color: yellow;
+                        cursor: pointer;
+                        scale: 1.1;
+                    }
